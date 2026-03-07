@@ -1,0 +1,91 @@
+import Link from "next/link";
+import Image from "next/image";
+import { categories } from "@/data/categories";
+
+export default function CategoriesGrid() {
+  return (
+    <div id="categories" className="w-full max-w-[1280px] px-4 sm:px-10 py-8">
+      <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-4 border-b border-slate-200 dark:border-slate-800 pb-4">
+        <div>
+          <h2 className="text-slate-900 dark:text-white text-2xl font-bold leading-tight tracking-tight">
+            Our Product Categories
+          </h2>
+          <p className="text-slate-500 dark:text-slate-400 mt-2">
+            Select a category to view detailed specifications and models.
+          </p>
+        </div>
+        <div className="flex gap-2">
+          <button className="p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-primary transition-colors">
+            <span className="material-symbols-outlined">grid_view</span>
+          </button>
+          <button className="p-2 rounded hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-400 hover:text-primary transition-colors">
+            <span className="material-symbols-outlined">list</span>
+          </button>
+        </div>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {categories.map((category) => (
+          <Link
+            key={category.id}
+            className="group flex flex-col bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700 overflow-hidden hover:shadow-xl hover:border-primary/50 transition-all duration-300 h-full"
+            href={category.href}
+          >
+            <div className="relative w-full aspect-[4/3] overflow-hidden bg-slate-100">
+              <Image
+                alt={category.name}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                src={category.image}
+                width={800}
+                height={600}
+              />
+              <div className="absolute inset-0 bg-slate-900/0 group-hover:bg-slate-900/10 transition-colors duration-300"></div>
+            </div>
+            <div className="p-5 flex flex-col flex-grow">
+              <div className="flex items-center gap-2 mb-2 text-primary text-xs font-bold uppercase tracking-wider">
+                <span className="material-symbols-outlined text-sm">
+                  {category.icon}
+                </span>
+                <span>{category.name.split(" ")[0]}</span>
+              </div>
+              <h3 className="text-slate-900 dark:text-white text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                {category.name}
+              </h3>
+              <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 flex-grow">
+                {category.description}
+              </p>
+              <div className="flex items-center text-primary font-semibold text-sm group-hover:translate-x-1 transition-transform mt-auto">
+                View Products
+                <span className="material-symbols-outlined text-lg ml-1">
+                  arrow_forward
+                </span>
+              </div>
+            </div>
+          </Link>
+        ))}
+
+        {/* Call to Action Card (Last item in grid) */}
+        <div className="flex flex-col bg-primary/5 dark:bg-slate-800/50 rounded-lg border-2 border-dashed border-primary/30 items-center justify-center p-8 text-center h-full">
+          <div className="size-16 rounded-full bg-primary/10 flex items-center justify-center mb-4 text-primary">
+            <span className="material-symbols-outlined text-3xl">
+              add_circle
+            </span>
+          </div>
+          <h3 className="text-slate-900 dark:text-white text-xl font-bold mb-2">
+            Custom Solution?
+          </h3>
+          <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">
+            Don't see what you need? Our engineering team builds custom
+            solutions for unique requirements.
+          </p>
+          <Link
+            className="flex items-center justify-center rounded h-10 px-6 bg-white border border-slate-200 text-slate-700 hover:text-primary hover:border-primary font-bold text-sm transition-colors shadow-sm"
+            href="/contact"
+          >
+            Contact Engineering
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
