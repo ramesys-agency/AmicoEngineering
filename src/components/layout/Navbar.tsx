@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import { ThemeToggle } from "@/components/ui/ThemeToggle";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -97,7 +96,6 @@ export default function Navbar() {
                 </svg>
                 <span className="hidden md:inline">WhatsApp Us</span>
               </Link>
-              <ThemeToggle variant="ghost" className="size-8" />
             </div>
           </div>
         </div>
@@ -189,15 +187,12 @@ export default function Navbar() {
                   Amico
                 </span>
               </Link>
-              <div className="flex items-center gap-2">
-                <ThemeToggle variant="ghost" />
-                <button
-                  onClick={() => setIsMenuOpen(false)}
-                  className="p-2 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-white"
-                >
-                  <span className="material-symbols-outlined">close</span>
-                </button>
-              </div>
+              <button
+                onClick={() => setIsMenuOpen(false)}
+                className="p-2 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-white"
+              >
+                <span className="material-symbols-outlined">close</span>
+              </button>
             </div>
 
             <div className="flex-1 overflow-y-auto py-4">
