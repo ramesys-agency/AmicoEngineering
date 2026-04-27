@@ -1,6 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
 import { Product } from "@/data/products";
+import PrimaryButton from "@/components/ui/PrimaryButton";
 
 export default function CategoryGrid({ products }: { products: Product[] }) {
   if (products.length === 0) {
@@ -18,7 +18,7 @@ export default function CategoryGrid({ products }: { products: Product[] }) {
           key={product.id}
           className="group flex flex-col bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-all duration-300"
         >
-          <div className="aspect-[16/10] relative bg-slate-100 overflow-hidden">
+          <div className="aspect-16/10 relative bg-slate-100 overflow-hidden">
             <Image
               alt={product.name}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -39,7 +39,7 @@ export default function CategoryGrid({ products }: { products: Product[] }) {
               {product.sku}
             </div>
           </div>
-          <div className="p-8 flex flex-col flex-grow">
+          <div className="p-8 flex flex-col grow">
             <div className="mb-4">
               <span className="text-[11px] font-bold text-primary uppercase tracking-widest mb-1 block">
                 {product.series}
@@ -62,15 +62,12 @@ export default function CategoryGrid({ products }: { products: Product[] }) {
                   </div>
                 ))}
               </div>
-              <Link
-                className="w-full bg-primary hover:bg-blue-600 text-white px-6 py-3.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20 flex items-center justify-center gap-2"
+              <PrimaryButton
                 href={`/products/${product.categoryId}/${product.id}`}
+                className="w-full"
               >
                 View Technical Specifications
-                <span className="material-symbols-outlined text-lg">
-                  arrow_forward
-                </span>
-              </Link>
+              </PrimaryButton>
             </div>
           </div>
         </div>

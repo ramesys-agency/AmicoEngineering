@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
+import Link from "next/link";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -9,8 +10,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Amico Engineering - Precision Engineering Solutions",
-  description: "Global Precision Engineering Solutions",
+  title: "Amico Engineering - Bulk Material Handling Systems & Equipment",
+  description:
+    "Manufacturer of Bulk Material Handling Systems & Related Equipments. ISO-9001-QMS/092020/130042 certified. Located at Howrah Industrial Area near Kolkata, India.",
+  icons: {
+    icon: "/amico_logo.png",
+    apple: "/amico_logo.png",
+  },
 };
 
 export default function RootLayout({

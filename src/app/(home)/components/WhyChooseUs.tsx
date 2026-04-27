@@ -6,7 +6,7 @@ export default function WhyChooseUs() {
       <div className="max-w-[1280px] mx-auto px-4 sm:px-10">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <div className="lg:w-1/2">
-            <div className="inline-block px-3 py-1 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-bold uppercase tracking-wider mb-4 rounded">
+            <div className="inline-block px-3 py-1 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-bold uppercase tracking-wider mb-4 rounded">
               Our Advantage
             </div>
             <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-6 leading-tight">
@@ -70,7 +70,7 @@ export default function WhyChooseUs() {
             </ul>
           </div>
           <div className="lg:w-1/2 relative">
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-slate-100 dark:bg-slate-800 -z-10 rounded"></div>
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-white dark:bg-slate-800 -z-10 rounded"></div>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 -z-10 rounded"></div>
             <Image
               className="rounded shadow-xl w-full object-cover h-[500px]"

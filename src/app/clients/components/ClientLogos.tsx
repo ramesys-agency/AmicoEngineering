@@ -1,4 +1,32 @@
 export default function ClientLogos() {
+  const clients = [
+    "Mangilall Rungta [FAD Orissa]",
+    "Eloquent Steel & Power Ltd",
+    "Amul Dairy [West Bengal Group]",
+    "Shakambhari Ispat & Power Ltd",
+    "Rohit Ferro Tech Ltd [SKP Group]",
+    "SCME Projects Pvt Ltd Oman",
+    "Impex Metal & Power Ltd",
+    "SPS Steel Rolling Mills Pvt Ltd",
+    "Shyam Steel [Sova Ispat]",
+    "NRV Steel & Power Ltd",
+    "Shreenivas Ferro Alloys",
+    "KAVY Steel Iran",
+    "Karlsons Company Ltd [Zambia]",
+    "BRAVO Sponge Iron & Power Ltd",
+    "Eastland Switch Gear Co. Ltd",
+    "BDG Steel & Power Pvt Ltd",
+    "Bhaskar Sharchi Ferro Alloys Ltd",
+    "SWM Steel & Power Ltd",
+    "Cosmic Ferro Alloys Ltd",
+    "Shakti Minerals [Orissa]",
+    "Indian Railway [Import Substitute Item]",
+    "Bartia Bright & Steel Ltd",
+    "Asansol Ferro Alloys",
+    "Sharp Ferro Alloys Ltd [Durgapur]",
+    "Prithvi Ferro Alloys Pvt. Ltd",
+  ];
+
   return (
     <section className="w-full bg-slate-50 dark:bg-slate-800/50 rounded-xl p-8 md:p-12 border border-slate-200 dark:border-slate-800">
       <div className="text-center mb-10">
@@ -6,56 +34,20 @@ export default function ClientLogos() {
           Trusted by Industry Leaders
         </h2>
         <p className="text-slate-500 dark:text-slate-400 mt-2">
-          Partnering with global innovators to build the future.
+          Partnering with leading companies across steel, power, and mining sectors.
         </p>
       </div>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 items-center justify-items-center opacity-80">
-        {/* Logo 1 */}
-        <div className="w-32 h-16 grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center text-slate-400 hover:text-blue-600">
-          <span className="material-symbols-outlined text-5xl">public</span>
-          <span className="sr-only">Global Corp</span>
-        </div>
-        {/* Logo 2 */}
-        <div className="w-32 h-16 grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center text-slate-400 hover:text-green-600">
-          <span className="material-symbols-outlined text-5xl">
-            energy_savings_leaf
-          </span>
-          <span className="sr-only">Eco Energy</span>
-        </div>
-        {/* Logo 3 */}
-        <div className="w-32 h-16 grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center text-slate-400 hover:text-orange-600">
-          <span className="material-symbols-outlined text-5xl">oil_barrel</span>
-          <span className="sr-only">PetroCore</span>
-        </div>
-        {/* Logo 4 */}
-        <div className="w-32 h-16 grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center text-slate-400 hover:text-purple-600">
-          <span className="material-symbols-outlined text-5xl">
-            precision_manufacturing
-          </span>
-          <span className="sr-only">FabriTech</span>
-        </div>
-        {/* Logo 5 */}
-        <div className="w-32 h-16 grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center text-slate-400 hover:text-red-600">
-          <span className="material-symbols-outlined text-5xl">
-            local_shipping
-          </span>
-          <span className="sr-only">TransLogistics</span>
-        </div>
-        {/* Logo 6 */}
-        <div className="w-32 h-16 grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center text-slate-400 hover:text-indigo-600">
-          <span className="material-symbols-outlined text-5xl">science</span>
-          <span className="sr-only">ChemLabs</span>
-        </div>
-        {/* Logo 7 */}
-        <div className="w-32 h-16 grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center text-slate-400 hover:text-yellow-600">
-          <span className="material-symbols-outlined text-5xl">warning</span>
-          <span className="sr-only">BuildSafe</span>
-        </div>
-        {/* Logo 8 */}
-        <div className="w-32 h-16 grayscale hover:grayscale-0 transition-all duration-300 flex items-center justify-center text-slate-400 hover:text-cyan-600">
-          <span className="material-symbols-outlined text-5xl">anchor</span>
-          <span className="sr-only">MarineWorks</span>
-        </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        {clients.map((client, index) => (
+          <div
+            key={index}
+            className="bg-white dark:bg-slate-700 p-4 rounded-lg border border-slate-200 dark:border-slate-600 hover:border-primary/50 transition-all duration-300 flex items-center justify-center text-center"
+          >
+            <span className="text-slate-700 dark:text-slate-300 font-medium text-sm">
+              {client}
+            </span>
+          </div>
+        ))}
       </div>
     </section>
   );

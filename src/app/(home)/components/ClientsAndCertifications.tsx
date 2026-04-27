@@ -1,6 +1,6 @@
 export function TrustedClients() {
   return (
-    <section className="py-16 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+    <section className="py-16 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-10">
         <h3 className="text-center text-sm font-bold text-slate-500 uppercase tracking-widest mb-10">
           Trusted by Industry Leaders
@@ -45,7 +45,7 @@ export function TrustedClients() {
 
 export function Certifications() {
   return (
-    <section className="py-12 bg-slate-50 dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700">
+    <section className="py-12 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-10">
         <div className="flex flex-col md:flex-row justify-center items-center gap-8 text-slate-400">
           <span className="text-xs font-bold uppercase tracking-wider">

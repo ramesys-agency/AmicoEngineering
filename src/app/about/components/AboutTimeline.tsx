@@ -18,15 +18,15 @@ export default function AboutTimeline() {
             <div className="md:w-1/2 md:pl-12 md:ml-auto">
               <div className="bg-background-light dark:bg-slate-800 p-6 rounded border border-slate-100 dark:border-slate-700 shadow-sm relative md:before:absolute md:before:top-6 md:before:-left-3 md:before:w-0 md:before:h-0 md:before:border-y-8 md:before:border-y-transparent md:before:border-r-8 md:before:border-r-background-light dark:md:before:border-r-slate-800">
                 <span className="text-primary font-bold text-xl block mb-2">
-                  1985
+                  1999
                 </span>
                 <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
                   Foundation
                 </h4>
                 <p className="text-slate-600 dark:text-slate-400 text-sm">
-                  Founded by John Doe as &quot;Industrial Components Ltd.&quot;
-                  with a small team of 5 engineers focusing on local structural
-                  repairs.
+                  AMICO ENGINEERING came into existence and set up a manufacturing
+                  unit at Howrah Industrial area near Kolkata for manufacture of Bulk
+                  Material Handling and Processing Equipment.
                 </p>
               </div>
             </div>
@@ -38,14 +38,15 @@ export default function AboutTimeline() {
             <div className="md:w-1/2 md:pr-12 md:mr-auto md:text-right">
               <div className="bg-background-light dark:bg-slate-800 p-6 rounded border border-slate-100 dark:border-slate-700 shadow-sm relative md:text-right text-left md:after:absolute md:after:top-6 md:after:-right-3 md:after:w-0 md:after:h-0 md:after:border-y-8 md:after:border-y-transparent md:after:border-l-8 md:after:border-l-background-light dark:md:after:border-l-slate-800">
                 <span className="text-primary font-bold text-xl block mb-2">
-                  1998
+                  2000s
                 </span>
                 <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
-                  Expansion &amp; Export
+                  Growth &amp; Recognition
                 </h4>
                 <p className="text-slate-600 dark:text-slate-400 text-sm">
-                  Opened the second manufacturing plant and began exporting
-                  precision parts to European markets.
+                  Continuous development enabled AMICO ENGINEERING to be
+                  acknowledged as a contributor to the formulation of engineering
+                  standards for Belt Conveyor, Screw Conveyor, and Conveyor Systems.
                 </p>
               </div>
             </div>
@@ -57,14 +58,15 @@ export default function AboutTimeline() {
             <div className="md:w-1/2 md:pl-12 md:ml-auto">
               <div className="bg-background-light dark:bg-slate-800 p-6 rounded border border-slate-100 dark:border-slate-700 shadow-sm relative md:before:absolute md:before:top-6 md:before:-left-3 md:before:w-0 md:before:h-0 md:before:border-y-8 md:before:border-y-transparent md:before:border-r-8 md:before:border-r-background-light dark:md:before:border-r-slate-800">
                 <span className="text-primary font-bold text-xl block mb-2">
-                  2010
+                  Quality Standards
                 </span>
                 <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
-                  ISO Certification
+                  ISO &amp; MSME Certification
                 </h4>
                 <p className="text-slate-600 dark:text-slate-400 text-sm">
-                  Achieved ISO 9001:2008 certification, marking a commitment to
-                  international quality standards and operational excellence.
+                  Achieved ISO-9001-QMS/092020/130042 certification and MSME
+                  registration (WB07A0011576), marking commitment to quality and
+                  operational excellence.
                 </p>
               </div>
             </div>
@@ -79,11 +81,12 @@ export default function AboutTimeline() {
                   Today
                 </span>
                 <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-2">
-                  Global Leader
+                  Industry Leader
                 </h4>
                 <p className="text-slate-600 dark:text-slate-400 text-sm">
-                  Recognized as a top-tier industrial engineering firm with over
-                  500+ employees and projects in 20+ countries.
+                  Renowned for quality and design capability with well-equipped
+                  workshops, serving prestigious clients across India and export
+                  markets including Oman, Iran, and Zambia.
                 </p>
               </div>
             </div>

@@ -7,19 +7,19 @@ export default function AboutIntroduction() {
         <div className="flex flex-col md:flex-row gap-12 items-center">
           <div className="flex-1 space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded bg-primary/10 text-primary text-sm font-bold uppercase tracking-wider">
-              Since 1985
+              Since 1999
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white leading-tight">
               Building the infrastructure of tomorrow with integrity and
               precision.
             </h2>
             <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-              Industria Eng began as a small fabrication workshop and has grown
-              into a global leader in heavy machinery manufacturing and
-              industrial engineering. We pride ourselves on tackling the most
-              complex challenges with simple, robust, and efficient solutions.
-              Our team of certified engineers works tirelessly to ensure every
-              component we produce meets the highest international standards.
+              AMICO ENGINEERING came into existence in 1999 and set up a
+              manufacturing unit at Howrah Industrial area near Kolkata in India
+              for manufacture of Bulk Material Handling and Processing Equipment.
+              Over the years, the Company has blossomed into a highly successful
+              engineering unit. AMICO ENGINEERING is renowned for its quality
+              and own design capability.
             </p>
           </div>
           <div className="flex-1 relative">
@@ -32,7 +32,7 @@ export default function AboutIntroduction() {
               height={1000}
             />
             <div className="absolute -bottom-6 -right-6 bg-white dark:bg-slate-800 p-6 rounded shadow-lg border-l-4 border-primary max-w-[200px]">
-              <p className="text-4xl font-black text-primary mb-1">38+</p>
+              <p className="text-4xl font-black text-primary mb-1">26+</p>
               <p className="text-sm font-medium text-slate-600 dark:text-slate-300">
                 Years of Engineering Excellence
               </p>

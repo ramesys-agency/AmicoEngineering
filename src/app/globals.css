@@ -3,7 +3,7 @@
 @theme {
   --color-primary: #135bec;
   --color-primary-dark: #0f4bb8;
-  --color-background-light: #f6f6f8;
+  --color-background-light: #ffffff;
   --color-background-dark: #101622;
   --font-display: var(--font-inter), sans-serif;
   --radius: 0.125rem;

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
@@ -21,20 +22,20 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center py-4 gap-4">
             {/* Logo */}
-            <div className="flex items-center gap-3">
-              <div className="size-8 text-primary">
-                <svg
-                  fill="currentColor"
-                  viewBox="0 0 48 48"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"></path>
-                </svg>
+            <Link href="/" className="flex items-center gap-3">
+              <div className="relative size-12 overflow-hidden">
+                <Image
+                  src="/amico_logo.png"
+                  alt="Amico Engineering Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
               </div>
               <h1 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">
                 Amico Engineering
               </h1>
-            </div>
+            </Link>
             {/* Contact Info */}
             <div className="flex flex-wrap justify-center md:justify-end gap-6 text-sm font-medium text-slate-600 dark:text-slate-400">
               <div className="flex items-center gap-2">
@@ -44,7 +45,7 @@ export default function Navbar() {
                 >
                   phone
                 </span>
-                <span>+1 (555) 019-2834</span>
+                <span>+91 9432581894</span>
               </div>
               <div className="flex items-center gap-2">
                 <span
@@ -53,11 +54,11 @@ export default function Navbar() {
                 >
                   mail
                 </span>
-                <span>sales@amicaengineering.com</span>
+                <span>amicoengg@gmail.com</span>
               </div>
               <Link
                 className="flex items-center gap-2 hover:text-primary transition-colors"
-                href="https://wa.me/15550192834"
+                href="https://wa.me/919432581894"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -15,9 +15,9 @@ export default function ContactInfo() {
               Registered Office
             </h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-              123 Corporate Blvd, Industrial Park
+              239, G. T. Road, Uttarpara
               <br />
-              Suite 400, Innovation City, 54321
+              Hooghly - 712258, West Bengal, India
             </p>
           </div>
         </div>
@@ -31,8 +31,8 @@ export default function ContactInfo() {
               Works / Factory
             </h3>
             <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-              Unit 9, Manufacturing Zone B<br />
-              Heavy Industry Sector, 98765
+              Howrah Industrial Area<br />
+              Near Kolkata, West Bengal, India
             </p>
           </div>
         </div>
@@ -55,20 +55,7 @@ export default function ContactInfo() {
                 Sales &amp; Inquiries
               </p>
               <p className="text-slate-900 dark:text-white font-medium text-lg">
-                +1 (555) 123-4567
-              </p>
-            </div>
-          </div>
-          <div className="flex items-start gap-4 p-6 hover:bg-slate-50 dark:hover:bg-slate-700/50 transition-colors">
-            <div className="text-primary mt-1">
-              <span className="material-symbols-outlined">support_agent</span>
-            </div>
-            <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">
-                Support &amp; Logistics
-              </p>
-              <p className="text-slate-900 dark:text-white font-medium text-lg">
-                +1 (555) 987-6543
+                +91 9432581894
               </p>
             </div>
           </div>
@@ -82,9 +69,9 @@ export default function ContactInfo() {
               </p>
               <a
                 className="text-slate-900 dark:text-white font-medium text-lg hover:text-primary underline decoration-slate-300 underline-offset-4"
-                href="mailto:info@amicaengineering.com"
+                href="mailto:amicoengg@gmail.com"
               >
-                info@amicaengineering.com
+                amicoengg@gmail.com
               </a>
             </div>
           </div>

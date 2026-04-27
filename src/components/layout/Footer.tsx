@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,14 +9,13 @@ export default function Footer() {
           {/* Column 1: Brand */}
           <div>
             <div className="flex items-center gap-2 mb-6">
-              <div className="size-6 text-primary">
-                <svg
-                  fill="currentColor"
-                  viewBox="0 0 48 48"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M4 4H17.3334V17.3334H30.6666V30.6666H44V44H4V4Z"></path>
-                </svg>
+              <div className="relative size-10 overflow-hidden">
+                <Image
+                  src="/amico_logo.png"
+                  alt="Amico Engineering Logo"
+                  fill
+                  className="object-contain"
+                />
               </div>
               <h2 className="text-xl font-bold">Amico Engineering</h2>
             </div>
@@ -44,35 +44,35 @@ export default function Footer() {
               </Link>
             </div>
           </div>
-          {/* Column 2: Quick Links */}
+          {/* Column 2: Product Categories */}
           <div>
             <h3 className="text-sm font-bold uppercase tracking-wider mb-6 text-slate-300">
-              Quick Links
+              Solutions
             </h3>
-            <ul className="space-y-3 text-sm text-slate-400">
+            <ul className="grid grid-cols-1 gap-3 text-sm text-slate-400">
               <li>
-                <Link
-                  className="hover:text-primary transition-colors"
-                  href="/about"
-                >
-                  About Company
-                </Link>
+                <Link className="hover:text-primary transition-colors" href="/products#conveyor-systems">Conveyor Systems</Link>
               </li>
               <li>
-                <Link
-                  className="hover:text-primary transition-colors"
-                  href="/products"
-                >
-                  Our Products
-                </Link>
+                <Link className="hover:text-primary transition-colors" href="/products#feeding-systems">Feeding Systems</Link>
               </li>
               <li>
-                <Link
-                  className="hover:text-primary transition-colors"
-                  href="/contact"
-                >
-                  Contact Support
-                </Link>
+                <Link className="hover:text-primary transition-colors" href="/products#elevation-lifting">Elevation & Lifting</Link>
+              </li>
+              <li>
+                <Link className="hover:text-primary transition-colors" href="/products#screening-separation">Screening & Separation</Link>
+              </li>
+              <li>
+                <Link className="hover:text-primary transition-colors" href="/products#hydraulic-systems">Hydraulic Systems</Link>
+              </li>
+              <li>
+                <Link className="hover:text-primary transition-colors" href="/products#industrial-components">Industrial Components</Link>
+              </li>
+              <li>
+                <Link className="hover:text-primary transition-colors" href="/products#fabrication-structural">Fabrication & Structures</Link>
+              </li>
+              <li>
+                <Link className="hover:text-primary transition-colors" href="/products#specialized-equipment">Specialized Equipment</Link>
               </li>
             </ul>
           </div>
@@ -98,13 +98,13 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-primary text-lg">
                   phone
                 </span>
-                <span>+1 (555) 019-2834</span>
+                <span>+91 9432581894</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-primary text-lg">
                   mail
                 </span>
-                <span>contact@amicaengineering.com</span>
+                <span>amicoengg@gmail.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-primary text-lg">

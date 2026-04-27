@@ -1,0 +1,10 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://amicoengineering.com/sitemap.xml
+
+# Disallow specific paths if needed
+# Disallow: /private/
+# Disallow: /admin/

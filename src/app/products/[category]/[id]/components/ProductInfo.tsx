@@ -1,3 +1,5 @@
+import PrimaryButton from "@/components/ui/PrimaryButton";
+
 export default function ProductInfo({ product }: { product: any }) {
   return (
     <div className="lg:col-span-5 flex flex-col gap-6">
@@ -65,10 +67,9 @@ export default function ProductInfo({ product }: { product: any }) {
             </span>
           </div>
           <div className="flex gap-3 mt-2">
-            <button className="flex-1 bg-primary hover:bg-blue-700 text-white font-bold py-3 px-6 rounded transition-colors flex items-center justify-center gap-2 shadow-lg shadow-blue-900/20">
-              <span className="material-symbols-outlined">mail</span>
+            <PrimaryButton className="flex-1" icon="mail">
               Send Inquiry
-            </button>
+            </PrimaryButton>
             <button
               aria-label="Download Datasheet"
               className="bg-white dark:bg-slate-700 hover:bg-slate-50 dark:hover:bg-slate-600 text-slate-700 dark:text-white border border-slate-300 dark:border-slate-600 font-medium py-3 px-4 rounded transition-colors flex items-center justify-center"
