@@ -14,12 +14,12 @@ export default function AboutIntroduction() {
               precision.
             </h2>
             <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
-              AMICO ENGINEERING came into existence in 1999 and set up a
-              manufacturing unit at Howrah Industrial area near Kolkata in India
-              for manufacture of Bulk Material Handling and Processing Equipment.
-              Over the years, the Company has blossomed into a highly successful
-              engineering unit. AMICO ENGINEERING is renowned for its quality
-              and own design capability.
+              Founded in 1999, Amico Engineering has established itself as a 
+              beacon of quality and trust in the industrial manufacturing landscape. 
+              Our state-of-the-art facility near Kolkata specializes in delivering 
+              high-precision engineering and processing systems. Over the decades, 
+              we have evolved into a premier engineering partner, renowned for 
+              our technical integrity and custom design capabilities.
             </p>
           </div>
           <div className="flex-1 relative">

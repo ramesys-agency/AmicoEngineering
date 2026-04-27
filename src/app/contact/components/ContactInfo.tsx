@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function ContactInfo() {
   return (
     <div className="lg:col-span-7 flex flex-col gap-8">
@@ -78,46 +76,6 @@ export default function ContactInfo() {
         </div>
       </div>
 
-      {/* Map Section */}
-      <div className="rounded-lg overflow-hidden border border-slate-200 dark:border-slate-700 shadow-sm bg-slate-100 h-[400px] relative group">
-        {/* Background Image acting as Map Placeholder */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url("https://placeholder.pics/svg/300")',
-          }}
-        >
-          <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors"></div>
-        </div>
-        {/* Map Controls Overlay */}
-        <div className="absolute top-4 right-4 flex flex-col gap-2">
-          <button className="bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 p-2 rounded shadow-md hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
-            <span className="material-symbols-outlined block">add</span>
-          </button>
-          <button className="bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 p-2 rounded shadow-md hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors">
-            <span className="material-symbols-outlined block">remove</span>
-          </button>
-        </div>
-        {/* Map Label */}
-        <div className="absolute bottom-4 left-4 bg-white dark:bg-slate-800 p-3 rounded shadow-lg flex items-center gap-3 max-w-xs">
-          <div className="size-10 bg-primary/10 rounded flex items-center justify-center text-primary shrink-0">
-            <span className="material-symbols-outlined">location_on</span>
-          </div>
-          <div>
-            <p className="text-xs font-bold text-slate-900 dark:text-white">
-              Manufacturing Hub
-            </p>
-            <p className="text-[10px] text-slate-500 truncate">
-              Zone B, Logistics Sector
-            </p>
-          </div>
-          <Link className="ml-auto text-primary hover:text-blue-700" href="#">
-            <span className="material-symbols-outlined text-lg">
-              directions
-            </span>
-          </Link>
-        </div>
-      </div>
     </div>
   );
 }

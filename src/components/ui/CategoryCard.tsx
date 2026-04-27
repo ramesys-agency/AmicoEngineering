@@ -10,7 +10,7 @@ export default function CategoryCard({ category }: { category: Category }) {
     >
       <div className="h-48 bg-white relative overflow-hidden">
         <Image
-          src={category.image}
+          src={category.image || "/placeholder-product.png"}
           alt={category.name}
           width={500}
           height={500}

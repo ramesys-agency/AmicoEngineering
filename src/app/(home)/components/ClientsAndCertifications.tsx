@@ -1,42 +1,56 @@
 export function TrustedClients() {
+  const prominentClients = [
+    { name: "Amul Dairy", sector: "FMCG", premium: true },
+    { name: "Indian Railway", sector: "Infrastructure", premium: true },
+    { name: "Shyam Steel", sector: "Steel", premium: true },
+    { name: "Eloquent Steel", sector: "Power", premium: true },
+    { name: "SPS Steel", sector: "Manufacturing", premium: true },
+    { name: "Mangilall Rungta", sector: "Mining", premium: true },
+  ];
+
   return (
-    <section className="py-16 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
+    <section className="py-20 bg-slate-50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-10">
-        <h3 className="text-center text-sm font-bold text-slate-500 uppercase tracking-widest mb-10">
-          Trusted by Industry Leaders
-        </h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center opacity-70 grayscale">
-          <div className="flex items-center justify-center h-12 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded shadow-sm">
-            <span className="font-black text-slate-700 dark:text-slate-300 text-lg italic">
-              BuildCo
-            </span>
+        <div className="flex flex-col md:flex-row justify-between items-center mb-12 gap-6">
+          <div className="text-center md:text-left">
+            <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+              Trusted by Industry Leaders
+            </h2>
+            <p className="text-slate-500 dark:text-slate-400 mt-2">
+              Powering global enterprises with precision engineering solutions.
+            </p>
           </div>
-          <div className="flex items-center justify-center h-12 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded shadow-sm">
-            <span className="font-bold text-slate-700 dark:text-slate-300 text-lg">
-              LOGISTIX
+          <a
+            href="/clients"
+            className="group flex items-center gap-2 text-primary font-bold hover:text-primary-dark transition-colors"
+          >
+            View All Clients
+            <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">
+              arrow_forward
             </span>
-          </div>
-          <div className="flex items-center justify-center h-12 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded shadow-sm">
-            <span className="font-black text-slate-700 dark:text-slate-300 text-lg tracking-tight">
-              POWER<span className="text-primary">GRID</span>
-            </span>
-          </div>
-          <div className="flex items-center justify-center h-12 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded shadow-sm">
-            <div className="flex gap-1 items-center font-bold text-slate-700 dark:text-slate-300 text-lg">
-              <span className="size-4 bg-slate-700 dark:bg-slate-300 rounded-full"></span>{" "}
-              AGRI-TECH
+          </a>
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          {prominentClients.map((client, index) => (
+            <div
+              key={index}
+              className={`group relative flex flex-col items-center justify-center p-6 transition-all duration-300 rounded-xl ${
+                client.premium 
+                  ? "bg-white dark:bg-slate-800 border-primary/30 shadow-md scale-[1.05] z-10" 
+                  : "bg-white dark:bg-slate-800 border-slate-200 dark:border-slate-700 shadow-sm"
+              } hover:shadow-lg hover:border-primary/50 hover:scale-[1.1]`}
+            >
+              <span className={`font-bold text-center text-sm transition-colors ${
+                client.premium ? "text-primary" : "text-slate-900 dark:text-white group-hover:text-primary"
+              }`}>
+                {client.name}
+              </span>
+              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mt-1">
+                {client.sector}
+              </span>
             </div>
-          </div>
-          <div className="flex items-center justify-center h-12 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded shadow-sm">
-            <span className="font-serif font-bold text-slate-700 dark:text-slate-300 text-lg">
-              Structura
-            </span>
-          </div>
-          <div className="flex items-center justify-center h-12 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded shadow-sm">
-            <span className="font-mono font-bold text-slate-700 dark:text-slate-300 text-lg">
-              MCHNE
-            </span>
-          </div>
+          ))}
         </div>
       </div>
     </section>
@@ -47,11 +61,11 @@ export function Certifications() {
   return (
     <section className="py-12 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-10">
-        <div className="flex flex-col md:flex-row justify-center items-center gap-8 text-slate-400">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-8 text-slate-400">
           <span className="text-xs font-bold uppercase tracking-wider">
             Certifications:
           </span>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6">
             <div className="flex items-center gap-2 border border-slate-300 dark:border-slate-600 px-3 py-1 rounded">
               <span className="material-symbols-outlined text-slate-500">
                 verified

@@ -3,15 +3,14 @@ export default function CompanyIntroduction() {
     <section className="py-16 bg-white dark:bg-background-dark border-b border-slate-200 dark:border-slate-800">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-10 text-center">
         <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6">
-          Bulk Material Handling Specialists
+          Commitment to Engineering Excellence
         </h2>
         <div className="w-16 h-1 bg-primary mx-auto mb-8 rounded-full"></div>
         <p className="max-w-4xl mx-auto text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-          Amico Engineering has been at the forefront of the bulk material handling
-          sector for over two decades. We specialize in high-capacity conveyor
-          systems, precision feeding solutions, and heavy industrial fabrication. Our
-          commitment to quality (ISO 9001:2015) ensures that every project meets
-          the rigorous demands of modern industry.
+          Amico Engineering is defined by a legacy of trust and a relentless pursuit of quality. 
+          For over two decades, we have delivered precision-engineered industrial systems that 
+          set the standard for reliability. As an ISO 9001:2015 certified manufacturer, 
+          we ensure that every solution is built to endure the most demanding operational environments.
         </p>
       </div>
     </section>

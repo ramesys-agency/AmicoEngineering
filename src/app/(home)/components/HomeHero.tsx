@@ -18,15 +18,15 @@ export default function HomeHero() {
             Innovating Manufacturing Since 1999
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight mb-6 text-white shadow-sm">
-            Bulk Material <br />
+            Engineering with <br />
             <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-300">
-              Handling Experts
+              Quality & Trust
             </span>
           </h1>
           <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl font-light leading-relaxed">
-            Amico Engineering specializes in heavy-duty conveyor systems,
-            feeding solutions, and industrial fabrication. Experience
-            reliability engineered to perfection.
+            Precision-engineered solutions designed for durability and performance. 
+            At Amico Engineering, we build long-term partnerships through 
+            uncompromising quality and technical excellence.
           </p>
           <div className="flex flex-wrap gap-4">
             <PrimaryButton href="/products" size="lg">

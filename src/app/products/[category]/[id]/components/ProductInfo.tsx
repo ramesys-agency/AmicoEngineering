@@ -8,9 +8,6 @@ export default function ProductInfo({ product }: { product: any }) {
           {product.name}
         </h1>
         <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500 dark:text-slate-400 mb-6">
-          <span className="bg-slate-100 dark:bg-slate-800 px-2 py-1 rounded font-mono text-xs font-semibold text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700">
-            SKU: {product.sku}
-          </span>
           <span className="flex items-center gap-1 text-green-600 dark:text-green-400 font-medium">
             <span className="material-symbols-outlined text-[18px]">
               check_circle

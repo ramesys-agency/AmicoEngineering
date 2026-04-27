@@ -19,8 +19,8 @@ export default function ClientsPage() {
         />
         <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-10 py-8 flex flex-col items-center">
           <div className="w-full flex flex-col gap-16">
-            <IndustrySectors />
             <ClientLogos />
+            <IndustrySectors />
             <Testimonials />
           </div>
         </div>

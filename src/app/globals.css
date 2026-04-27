@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 @theme {
+  --breakpoint-xs: 375px;
   --color-primary: #135bec;
   --color-primary-dark: #0f4bb8;
   --color-background-light: #ffffff;
@@ -19,10 +20,8 @@
     @apply font-display min-h-screen flex flex-col;
   }
 
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: var(--color-background-dark);
-      color: var(--color-slate-100);
-    }
+  :root.dark body {
+    background-color: var(--color-background-dark);
+    color: var(--color-slate-100);
   }
 }

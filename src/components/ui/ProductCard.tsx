@@ -9,8 +9,8 @@ export default function ProductCard({ product }: { product: Product }) {
       <div className="aspect-16/10 relative bg-white overflow-hidden">
         <Image
           alt={product.name}
-          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          src={product.image}
+          className="w-full h-full object-contain p-4 transition-transform duration-500 group-hover:scale-105"
+          src={product.image || "/placeholder-product.png"}
           width={1000}
           height={1000}
         />
@@ -21,9 +21,6 @@ export default function ProductCard({ product }: { product: Product }) {
             {product.tag}
           </div>
         )}
-        <div className="absolute bottom-4 right-4 bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm text-slate-900 dark:text-white text-[10px] font-bold px-3 py-1.5 rounded-lg border border-white/20 uppercase tracking-wider">
-          {product.sku}
-        </div>
       </div>
       <div className="p-8 flex flex-col grow">
         <div className="mb-4">

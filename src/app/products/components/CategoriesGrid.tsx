@@ -12,7 +12,7 @@ export default function CategoriesGrid() {
             Our Product Range
           </h2>
           <p className="text-slate-500 dark:text-slate-400 mt-2">
-            Explore our comprehensive bulk material handling solutions.
+            High-precision engineering across our specialized product categories.
           </p>
         </div>
       </div>
@@ -28,7 +28,7 @@ export default function CategoriesGrid() {
               <Image
                 alt={category.name}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                src={category.image}
+                src={category.image || "/placeholder-product.png"}
                 width={800}
                 height={450}
               />
@@ -92,7 +92,7 @@ export default function CategoriesGrid() {
           </p>
           <Link
             className="flex items-center justify-center rounded h-10 px-6 bg-white border border-slate-200 text-slate-700 hover:text-primary hover:border-primary font-bold text-sm transition-colors shadow-sm"
-            href="/contact"
+            href="/request-quote"
           >
             Contact Engineering
           </Link>

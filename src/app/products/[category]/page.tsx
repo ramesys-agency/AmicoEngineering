@@ -5,7 +5,6 @@ import Footer from "@/components/layout/Footer";
 import CategoryBreadcrumb from "./components/CategoryBreadcrumb";
 import CategoryHeader from "./components/CategoryHeader";
 import CategoryGrid from "./components/CategoryGrid";
-import CategoryPagination from "./components/CategoryPagination";
 import CategoryCTA from "./components/CategoryCTA";
 
 export async function generateStaticParams() {
@@ -39,7 +38,6 @@ export default async function CategoryPage({
             productCount={categoryProducts.length}
           />
           <CategoryGrid products={categoryProducts} />
-          <CategoryPagination />
         </div>
 
         <CategoryCTA />

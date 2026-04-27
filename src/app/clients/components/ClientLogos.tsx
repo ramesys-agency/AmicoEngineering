@@ -1,51 +1,105 @@
 export default function ClientLogos() {
   const clients = [
-    "Mangilall Rungta [FAD Orissa]",
-    "Eloquent Steel & Power Ltd",
-    "Amul Dairy [West Bengal Group]",
-    "Shakambhari Ispat & Power Ltd",
-    "Rohit Ferro Tech Ltd [SKP Group]",
-    "SCME Projects Pvt Ltd Oman",
-    "Impex Metal & Power Ltd",
-    "SPS Steel Rolling Mills Pvt Ltd",
-    "Shyam Steel [Sova Ispat]",
-    "NRV Steel & Power Ltd",
-    "Shreenivas Ferro Alloys",
-    "KAVY Steel Iran",
-    "Karlsons Company Ltd [Zambia]",
-    "BRAVO Sponge Iron & Power Ltd",
-    "Eastland Switch Gear Co. Ltd",
-    "BDG Steel & Power Pvt Ltd",
-    "Bhaskar Sharchi Ferro Alloys Ltd",
-    "SWM Steel & Power Ltd",
-    "Cosmic Ferro Alloys Ltd",
-    "Shakti Minerals [Orissa]",
-    "Indian Railway [Import Substitute Item]",
-    "Bartia Bright & Steel Ltd",
-    "Asansol Ferro Alloys",
-    "Sharp Ferro Alloys Ltd [Durgapur]",
-    "Prithvi Ferro Alloys Pvt. Ltd",
+    { name: "Mangilall Rungta", sector: "FAD Orissa", premium: true },
+    {
+      name: "Eloquent Steel & Power Ltd",
+      sector: "Steel & Power",
+      premium: true,
+    },
+    { name: "Amul Dairy", sector: "West Bengal Group", premium: true },
+    { name: "Shakambhari Ispat & Power Ltd", sector: "Steel & Power" },
+    { name: "Rohit Ferro Tech Ltd", sector: "SKP Group" },
+    { name: "SCME Projects Pvt Ltd", sector: "Oman" },
+    { name: "Impex Metal & Power Ltd", sector: "Steel & Power" },
+    {
+      name: "SPS Steel Rolling Mills Pvt Ltd",
+      sector: "Manufacturing",
+      premium: true,
+    },
+    { name: "Shyam Steel", sector: "Sova Ispat", premium: true },
+    { name: "NRV Steel & Power Ltd", sector: "Steel & Power" },
+    { name: "Shreenivas Ferro Alloys", sector: "Ferro Alloys" },
+    { name: "KAVY Steel", sector: "Iran" },
+    { name: "Karlsons Company Ltd", sector: "Zambia" },
+    { name: "BRAVO Sponge Iron & Power Ltd", sector: "Steel & Power" },
+    { name: "Eastland Switch Gear Co. Ltd", sector: "Electrical" },
+    { name: "BDG Steel & Power Pvt Ltd", sector: "Steel & Power" },
+    { name: "Bhaskar Sharchi Ferro Alloys Ltd", sector: "Ferro Alloys" },
+    { name: "SWM Steel & Power Ltd", sector: "Steel & Power" },
+    { name: "Cosmic Ferro Alloys Ltd", sector: "Ferro Alloys" },
+    { name: "Shakti Minerals", sector: "Orissa" },
+    { name: "Indian Railway", sector: "Import Substitute", premium: true },
+    { name: "Bartia Bright & Steel Ltd", sector: "Steel" },
+    { name: "Asansol Ferro Alloys", sector: "Ferro Alloys" },
+    { name: "Sharp Ferro Alloys Ltd", sector: "Durgapur" },
+    { name: "Prithvi Ferro Alloys Pvt. Ltd", sector: "Manufacturing" },
   ];
 
   return (
-    <section className="w-full bg-slate-50 dark:bg-slate-800/50 rounded-xl p-8 md:p-12 border border-slate-200 dark:border-slate-800">
-      <div className="text-center mb-10">
-        <h2 className="text-slate-900 dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em]">
+    <section className="w-full py-16">
+      <div className="text-center max-w-3xl mx-auto mb-16">
+        <h2 className="text-slate-900 dark:text-white text-4xl font-extrabold leading-tight tracking-tight mb-4">
           Trusted by Industry Leaders
         </h2>
-        <p className="text-slate-500 dark:text-slate-400 mt-2">
-          Partnering with leading companies across steel, power, and mining sectors.
+        <p className="text-slate-600 dark:text-slate-400 text-lg">
+          We are proud to partner with some of the world&apos;s most prestigious
+          organizations, delivering engineering excellence across diverse
+          industrial sectors.
         </p>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {clients.map((client, index) => (
           <div
             key={index}
-            className="bg-white dark:bg-slate-700 p-4 rounded-lg border border-slate-200 dark:border-slate-600 hover:border-primary/50 transition-all duration-300 flex items-center justify-center text-center"
+            className={`group relative p-6 rounded-2xl border transition-all duration-500 overflow-hidden ${
+              client.premium
+                ? "bg-linear-to-br from-white to-primary/5 dark:from-slate-800 dark:to-primary/10 border-primary/30 shadow-lg shadow-primary/5 scale-[1.02] z-10"
+                : "bg-white dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 hover:border-primary/50"
+            } hover:shadow-xl hover:shadow-primary/10 hover:scale-[1.05]`}
           >
-            <span className="text-slate-700 dark:text-slate-300 font-medium text-sm">
-              {client}
-            </span>
+            <div className="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-25 transition-opacity">
+              <span
+                className={`material-symbols-outlined text-4xl ${client.premium ? "text-primary" : "text-slate-400"}`}
+              >
+                {client.premium ? "stars" : "corporate_fare"}
+              </span>
+            </div>
+
+            <div className="relative z-10 pt-2">
+              <h3
+                className={`font-bold text-lg transition-colors duration-300 ${
+                  client.premium
+                    ? "text-primary dark:text-primary-light"
+                    : "text-slate-900 dark:text-white group-hover:text-primary"
+                }`}
+              >
+                {client.name}
+              </h3>
+              <div className="mt-2 flex items-center gap-2">
+                <span
+                  className={`h-px w-4 ${client.premium ? "bg-primary" : "bg-primary/40"}`}
+                ></span>
+                <span
+                  className={`text-xs font-bold uppercase tracking-widest transition-colors ${
+                    client.premium
+                      ? "text-slate-600 dark:text-slate-300"
+                      : "text-slate-400 group-hover:text-slate-500 dark:group-hover:text-slate-300"
+                  }`}
+                >
+                  {client.sector}
+                </span>
+              </div>
+            </div>
+
+            {/* Background decorative elements */}
+            <div
+              className={`absolute -bottom-10 -right-10 w-32 h-32 rounded-full blur-3xl transition-all duration-500 ${
+                client.premium
+                  ? "bg-primary/20"
+                  : "bg-primary/5 group-hover:bg-primary/10"
+              }`}
+            ></div>
           </div>
         ))}
       </div>

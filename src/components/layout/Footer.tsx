@@ -51,28 +51,68 @@ export default function Footer() {
             </h3>
             <ul className="grid grid-cols-1 gap-3 text-sm text-slate-400">
               <li>
-                <Link className="hover:text-primary transition-colors" href="/products#conveyor-systems">Conveyor Systems</Link>
+                <Link
+                  className="hover:text-primary transition-colors"
+                  href="/products#conveyor-systems"
+                >
+                  Conveyor Systems
+                </Link>
               </li>
               <li>
-                <Link className="hover:text-primary transition-colors" href="/products#feeding-systems">Feeding Systems</Link>
+                <Link
+                  className="hover:text-primary transition-colors"
+                  href="/products#feeding-systems"
+                >
+                  Feeding Systems
+                </Link>
               </li>
               <li>
-                <Link className="hover:text-primary transition-colors" href="/products#elevation-lifting">Elevation & Lifting</Link>
+                <Link
+                  className="hover:text-primary transition-colors"
+                  href="/products#elevation-lifting"
+                >
+                  Elevation & Lifting
+                </Link>
               </li>
               <li>
-                <Link className="hover:text-primary transition-colors" href="/products#screening-separation">Screening & Separation</Link>
+                <Link
+                  className="hover:text-primary transition-colors"
+                  href="/products#screening-separation"
+                >
+                  Screening & Separation
+                </Link>
               </li>
               <li>
-                <Link className="hover:text-primary transition-colors" href="/products#hydraulic-systems">Hydraulic Systems</Link>
+                <Link
+                  className="hover:text-primary transition-colors"
+                  href="/products#hydraulic-systems"
+                >
+                  Hydraulic Systems
+                </Link>
               </li>
               <li>
-                <Link className="hover:text-primary transition-colors" href="/products#industrial-components">Industrial Components</Link>
+                <Link
+                  className="hover:text-primary transition-colors"
+                  href="/products#industrial-components"
+                >
+                  Industrial Components
+                </Link>
               </li>
               <li>
-                <Link className="hover:text-primary transition-colors" href="/products#fabrication-structural">Fabrication & Structures</Link>
+                <Link
+                  className="hover:text-primary transition-colors"
+                  href="/products#fabrication-structural"
+                >
+                  Fabrication & Structures
+                </Link>
               </li>
               <li>
-                <Link className="hover:text-primary transition-colors" href="/products#specialized-equipment">Specialized Equipment</Link>
+                <Link
+                  className="hover:text-primary transition-colors"
+                  href="/products#specialized-equipment"
+                >
+                  Specialized Equipment
+                </Link>
               </li>
             </ul>
           </div>
@@ -87,11 +127,9 @@ export default function Footer() {
                   location_on
                 </span>
                 <span>
-                  1234 Manufacturing Blvd,
+                  239, G. T. Road, Uttarpara
                   <br />
-                  Industrial District, NY 10012
-                  <br />
-                  United States
+                  Hooghly - 712258, West Bengal, India
                 </span>
               </li>
               <li className="flex items-center gap-3">
@@ -110,7 +148,7 @@ export default function Footer() {
                 <span className="material-symbols-outlined text-primary text-lg">
                   fax
                 </span>
-                <span>+1 (555) 019-2835</span>
+                <span>+91 9432581894</span>
               </li>
             </ul>
           </div>

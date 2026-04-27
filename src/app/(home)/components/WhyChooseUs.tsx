@@ -10,13 +10,13 @@ export default function WhyChooseUs() {
               Our Advantage
             </div>
             <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-6 leading-tight">
-              Engineered for <br />
-              Reliability &amp; Performance
+              Built on a Foundation of <br />
+              Quality & Trust
             </h2>
             <p className="text-slate-600 dark:text-slate-300 text-lg mb-8">
-              Choosing Amico Engineering means partnering with a team dedicated
-              to operational excellence. We dont just supply parts; we provide
-              integrated solutions that drive efficiency.
+              At Amico Engineering, we believe that quality is the ultimate
+              expression of trust. We don&apos;t just supply parts; we provide
+              precision-engineered solutions that you can rely on for years to come.
             </p>
             <ul className="space-y-6">
               <li className="flex items-start gap-4">
@@ -69,7 +69,7 @@ export default function WhyChooseUs() {
               </li>
             </ul>
           </div>
-          <div className="lg:w-1/2 relative">
+          <div className="lg:w-1/2 relative hidden sm:block">
             <div className="absolute -top-4 -left-4 w-24 h-24 bg-white dark:bg-slate-800 -z-10 rounded"></div>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 -z-10 rounded"></div>
             <Image

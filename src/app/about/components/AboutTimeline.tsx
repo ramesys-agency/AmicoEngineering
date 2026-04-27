@@ -24,9 +24,9 @@ export default function AboutTimeline() {
                   Foundation
                 </h4>
                 <p className="text-slate-600 dark:text-slate-400 text-sm">
-                  AMICO ENGINEERING came into existence and set up a manufacturing
-                  unit at Howrah Industrial area near Kolkata for manufacture of Bulk
-                  Material Handling and Processing Equipment.
+                  Amico Engineering was founded with a vision to deliver 
+                  precision-engineered industrial systems and high-quality 
+                  processing equipment from its facility in Howrah, West Bengal.
                 </p>
               </div>
             </div>

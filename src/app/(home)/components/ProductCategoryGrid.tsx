@@ -9,10 +9,10 @@ export default function ProductCategoryGrid() {
         <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-6 text-center md:text-left">
           <div>
             <h2 className="text-3xl md:text-4xl font-black text-slate-900 dark:text-white mb-4">
-              Bulk Material Handling Solutions
+              Precision Engineered Solutions
             </h2>
             <p className="text-lg text-slate-500 dark:text-slate-400 max-w-2xl">
-              Specialized engineering for mining, logistics, and heavy industrial applications.
+              Industry-leading quality across all our manufacturing and engineering categories.
             </p>
           </div>
           <Link

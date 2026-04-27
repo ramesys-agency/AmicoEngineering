@@ -26,8 +26,8 @@ export const products: Product[] = inventoryCategories.flatMap(cat =>
     categoryId: cat.id,
     series: "Industrial Grade",
     name: p.name,
-    description: `High-quality ${p.name.toLowerCase()} designed for heavy-duty industrial applications in bulk material handling.`,
-    image: cat.image, // Using category image as fallback
+    description: `Precision-engineered ${p.name.toLowerCase()} built for reliability and performance in demanding industrial environments.`,
+    image: p.image || "/placeholder-product.png",
     sku: `${cat.id.substring(0, 2).toUpperCase()}-${p.id.substring(0, 3).toUpperCase()}`,
     specs: [
       { icon: "settings", label: "Customizable" },

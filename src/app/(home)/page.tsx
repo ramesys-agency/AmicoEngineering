@@ -7,18 +7,17 @@ import {
   TrustedClients,
   Certifications,
 } from "./components/ClientsAndCertifications";
-import HomeGallery from "./components/HomeGallery";
+
 
 export default function Home() {
   return (
     <>
-      <main className="flex-1">
+      <main className="flex-1 overflow-x-hidden">
         <HomeHero />
         <CompanyIntroduction />
         <ProductCategoryGrid />
         <WhyChooseUs />
         <TrustedClients />
-        <HomeGallery />
         <Certifications />
       </main>
       <Footer />
