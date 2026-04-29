@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import { ThemeProvider } from "@/components/providers/ThemeProvider";
-import Link from "next/link";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -11,7 +11,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Amico Engineering | Precision Quality & Trusted Engineering Solutions",
+  title:
+    "Amico Engineering | Precision Quality & Trusted Engineering Solutions",
   description:
     "Amico Engineering is a premier ISO-9001 certified manufacturer of high-precision industrial systems. Built on a foundation of quality and trust, we deliver durable engineering solutions for global industries.",
   icons: {
@@ -42,6 +43,7 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
+          <Analytics />
         </ThemeProvider>
       </body>
     </html>

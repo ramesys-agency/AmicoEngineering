@@ -5,6 +5,7 @@ Allow: /
 # Sitemap
 Sitemap: https://amicoengineering.com/sitemap.xml
 
-# Disallow specific paths if needed
+# Disallow specific paths
+Disallow: /api/
 # Disallow: /private/
 # Disallow: /admin/
