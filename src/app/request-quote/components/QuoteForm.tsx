@@ -26,8 +26,8 @@ export default function QuoteForm() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!formData.category) {
-      setErrorMessage("Please select a product category.");
+    if (!formData.name || !formData.phone || !formData.category) {
+      setErrorMessage("Please fill in all mandatory fields: Name, Phone Number, and Category.");
       setShowErrorModal(true);
       return;
     }
@@ -140,32 +140,31 @@ export default function QuoteForm() {
                       />
                     </label>
                     <label className="block">
-                      <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 block mb-1.5">Company Name *</span>
+                      <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 block mb-1.5">Company Name</span>
                       <input
-                        required
                         name="company"
                         value={formData.company}
                         onChange={handleChange}
                         className="w-full rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-900/50 px-4 py-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all outline-none"
-                        placeholder="Acme Engineering Ltd."
+                        placeholder="Acme Engineering Ltd. (Optional)"
                       />
                     </label>
                     <div className="grid grid-cols-1 gap-4">
                       <label className="block">
-                        <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 block mb-1.5">Email Address *</span>
+                        <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 block mb-1.5">Email Address</span>
                         <input
-                          required
                           type="email"
                           name="email"
                           value={formData.email}
                           onChange={handleChange}
                           className="w-full rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-900/50 px-4 py-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all outline-none"
-                          placeholder="john@company.com"
+                          placeholder="john@company.com (Optional)"
                         />
                       </label>
                       <label className="block">
-                        <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 block mb-1.5">Phone Number</span>
+                        <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 block mb-1.5">Phone Number *</span>
                         <input
+                          required
                           type="tel"
                           name="phone"
                           value={formData.phone}
@@ -199,15 +198,14 @@ export default function QuoteForm() {
                       </select>
                     </label>
                     <label className="block">
-                      <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 block mb-1.5">Detailed Specifications *</span>
+                      <span className="text-sm font-semibold text-slate-700 dark:text-slate-300 block mb-1.5">Detailed Specifications</span>
                       <textarea
-                        required
                         name="specifications"
                         value={formData.specifications}
                         onChange={handleChange}
                         rows={5}
                         className="w-full rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-900/50 px-4 py-3 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary/20 focus:border-primary transition-all outline-none resize-none"
-                        placeholder="Please include dimensions, capacity, material type, and any other technical requirements..."
+                        placeholder="Please include dimensions, capacity, material type, etc. (Optional)"
                       ></textarea>
                     </label>
                   </div>

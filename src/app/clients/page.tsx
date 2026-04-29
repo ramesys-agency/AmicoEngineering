@@ -13,7 +13,7 @@ export default function ClientsPage() {
           title="Engineering Solutions for Critical Industries"
           description="Delivering precision and innovation across mining, manufacturing, and logistics sectors worldwide."
           imageSrc="https://lh3.googleusercontent.com/aida-public/AB6AXuCNCXh82QaKl8HnUMvAe-5wAtVTYFqHcvoBPqDdw2YAUvmlUylB31cziC8MWHmVMnFozHtS9rEHOLR1q8IWS6P8kWuOM4MIGOAihtEe97w6VFTx_igoY7Noi8Sixg-kdcH4Td_aosow6MtGmYljCOuT5DspIvwvlI6rk3z4XdvlkPGMONo-fRAdEdRjg9dA2rzFUKAza5vCMGoPqHlW3pYa3iUfzqqVLSBPUWVHwalPhR87B_Dg0h_7H2pXfglYkxtlbaFXcppU-TSD"
-          primaryButton={{ text: "View Our Projects", href: "/solutions" }}
+          primaryButton={{ text: "View Our Projects", href: "/gallery" }}
           secondaryButton={{ text: "Learn More", href: "/about" }}
           breadcrumbs={[{ label: "Home", href: "/" }, { label: "Clients" }]}
         />

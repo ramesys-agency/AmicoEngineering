@@ -19,9 +19,4 @@
     color: var(--color-slate-900);
     @apply font-display min-h-screen flex flex-col;
   }
-
-  :root.dark body {
-    background-color: var(--color-background-dark);
-    color: var(--color-slate-100);
-  }
 }
