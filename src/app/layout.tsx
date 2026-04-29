@@ -19,6 +19,9 @@ export const metadata: Metadata = {
     icon: "/amico_logo.png",
     apple: "/amico_logo.png",
   },
+  verification: {
+    google: "cg3OlscVGYVAQsoYDr06y1xjwMO-_hO4xWimCELM4vU",
+  },
 };
 
 export default function RootLayout({
