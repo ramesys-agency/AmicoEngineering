@@ -24,19 +24,19 @@ export default function HomeHero() {
             </span>
           </h1>
           <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-2xl font-light leading-relaxed">
-            Precision-engineered solutions designed for durability and performance. 
-            At Amico Engineering, we build long-term partnerships through 
-            uncompromising quality and technical excellence.
+            Precision-engineered solutions designed for durability and
+            performance. At Amico Engineering, we build long-term partnerships
+            through uncompromising quality and technical excellence.
           </p>
           <div className="flex flex-wrap gap-4">
             <PrimaryButton href="/products" size="lg">
               View Products
             </PrimaryButton>
             <Link
-              href="/services"
+              href="/contact"
               className="bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-3.5 rounded text-base font-bold backdrop-blur-sm transition-all"
             >
-              Our Services
+              Contact Us
             </Link>
           </div>
         </div>
