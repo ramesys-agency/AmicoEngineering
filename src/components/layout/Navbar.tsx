@@ -9,10 +9,9 @@ export default function Navbar() {
   const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Close menu when route changes
-  useEffect(() => {
-    setIsMenuOpen(false);
-  }, [pathname]);
+  // Close menu when route changes is handled in Link clicks or we can use a key
+  // But to satisfy the lint rule and keep functionality, we can just remove the effect 
+  // and use the onClick handler in the links.
 
   // Prevent scrolling when menu is open
   useEffect(() => {
@@ -35,7 +34,7 @@ export default function Navbar() {
   return (
     <header className="w-full">
       {/* Top Utility Header */}
-      <div className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+      <div className="bg-white  border-b border-slate-200 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-3 md:py-4 gap-4">
             {/* Logo */}
@@ -49,13 +48,13 @@ export default function Navbar() {
                   priority
                 />
               </div>
-              <h1 className="text-lg md:text-2xl font-bold tracking-tight text-slate-900 dark:text-white whitespace-nowrap">
+              <h1 className="text-lg md:text-2xl font-bold tracking-tight text-slate-900  whitespace-nowrap">
                 <span className="hidden xs:inline">Amico Engineering</span>
                 <span className="xs:hidden">Amico</span>
               </h1>
             </Link>
             {/* Contact Info */}
-            <div className="flex justify-end items-center gap-3 md:gap-6 text-[10px] sm:text-xs md:text-sm font-medium text-slate-600 dark:text-slate-400">
+            <div className="flex justify-end items-center gap-3 md:gap-6 text-[10px] sm:text-xs md:text-sm font-medium text-slate-600 ">
               <a
                 href="tel:+919432581894"
                 className="flex items-center gap-1.5 hover:text-primary transition-colors"
@@ -127,6 +126,7 @@ export default function Navbar() {
                 return (
                   <Link
                     key={link.name}
+                    onClick={() => setIsMenuOpen(false)}
                     className={`text-white px-3 xl:px-4 py-2 rounded text-xs xl:text-sm font-bold uppercase tracking-wide transition-colors ${
                       isActive ? "bg-white/20" : "hover:bg-white/10"
                     }`}
@@ -159,7 +159,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Overlay */}
         <div
-          className={`lg:hidden fixed inset-0 z-100 transform transition-transform duration-300 ease-in-out ${
+          className={`lg:hidden fixed inset-0 z-50 transform transition-transform duration-300 ease-in-out ${
             isMenuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -172,8 +172,8 @@ export default function Navbar() {
           />
 
           {/* Drawer */}
-          <div className="absolute left-0 top-0 bottom-0 w-[280px] bg-white dark:bg-slate-900 shadow-2xl flex flex-col">
-            <div className="p-6 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between">
+          <div className="absolute left-0 top-0 bottom-0 w-[280px] bg-white shadow-2xl flex flex-col">
+            <div className="p-6 border-b border-slate-100 flex items-center justify-between">
               <Link href="/" className="flex items-center gap-2">
                 <div className="relative size-8 overflow-hidden">
                   <Image
@@ -183,13 +183,14 @@ export default function Navbar() {
                     className="object-contain"
                   />
                 </div>
-                <span className="font-bold text-slate-900 dark:text-white">
+                <span className="font-bold text-slate-900">
                   Amico
                 </span>
               </Link>
               <button
                 onClick={() => setIsMenuOpen(false)}
-                className="p-2 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-white"
+                className="p-2 text-slate-500 hover:text-slate-700"
+                aria-label="Close menu"
               >
                 <span className="material-symbols-outlined">close</span>
               </button>
@@ -204,10 +205,11 @@ export default function Navbar() {
                 return (
                   <Link
                     key={link.name}
+                    onClick={() => setIsMenuOpen(false)}
                     className={`flex items-center px-6 py-4 text-sm font-bold uppercase tracking-wider transition-colors ${
                       isActive
                         ? "text-primary bg-primary/5"
-                        : "text-slate-600 dark:text-slate-300 hover:text-primary hover:bg-slate-50 dark:hover:bg-slate-800"
+                        : "text-slate-600 hover:text-primary hover:bg-slate-50"
                     }`}
                     href={link.href}
                   >
@@ -217,7 +219,7 @@ export default function Navbar() {
               })}
             </div>
 
-            <div className="p-6 border-t border-slate-100 dark:border-slate-800">
+            <div className="p-6 border-t border-slate-100">
               <Link
                 className="w-full bg-primary text-white hover:bg-primary-dark px-4 py-3 rounded text-sm font-bold uppercase tracking-wide shadow-md flex items-center justify-center gap-2 transition-colors"
                 href="/request-quote"

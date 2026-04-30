@@ -5,7 +5,6 @@
   --color-primary: #135bec;
   --color-primary-dark: #0f4bb8;
   --color-background-light: #ffffff;
-  --color-background-dark: #101622;
   --font-display: var(--font-inter), sans-serif;
   --radius: 0.125rem;
   --radius-lg: 0.25rem;
@@ -13,10 +12,21 @@
   --radius-full: 0.75rem;
 }
 
+:root {
+  color-scheme: light !important;
+}
+
 @layer base {
   body {
-    background-color: var(--color-background-light);
-    color: var(--color-slate-900);
+    background-color: #ffffff !important;
+    color: #0f172a !important;
     @apply font-display min-h-screen flex flex-col;
+  }
+}
+
+/* Force light mode even if system is dark */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light !important;
   }
 }

@@ -7,9 +7,9 @@ export default function RelatedProducts({
   relatedProducts: any[];
 }) {
   return (
-    <div className="mt-20 mb-12 border-t border-slate-200 dark:border-slate-800 pt-12">
+    <div className="mt-20 mb-12 border-t border-slate-200  pt-12">
       <div className="flex items-center justify-between mb-8">
-        <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
+        <h2 className="text-2xl font-bold text-slate-900 ">
           Related Products
         </h2>
         <Link

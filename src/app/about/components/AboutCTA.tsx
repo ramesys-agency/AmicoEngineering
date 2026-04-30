@@ -8,14 +8,14 @@ export default function AboutCTA() {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="py-20 bg-white dark:bg-background-dark border-t border-slate-200 dark:border-slate-800">
+    <section className="py-20 bg-white  border-t border-slate-200 ">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-10">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-background-light dark:bg-slate-800 p-10 rounded-lg">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-background-light  p-10 rounded-lg">
           <div className="flex-1">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 dark:text-white mb-2">
+            <h2 className="text-2xl md:text-3xl font-bold text-slate-900  mb-2">
               Ready to engineer your next project?
             </h2>
-            <p className="text-slate-600 dark:text-slate-400">
+            <p className="text-slate-600 ">
               Contact our expert team today for a consultation or quote.
             </p>
           </div>
@@ -28,7 +28,7 @@ export default function AboutCTA() {
             </Link>
             <button
               onClick={() => setIsModalOpen(true)}
-              className="cursor-pointer w-full sm:w-auto flex items-center justify-center rounded border border-slate-300 dark:border-slate-600 bg-white dark:bg-transparent hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors text-slate-900 dark:text-white font-bold h-12 px-8 whitespace-nowrap"
+              className="cursor-pointer w-full sm:w-auto flex items-center justify-center rounded border border-slate-300  bg-white  hover:bg-slate-50  transition-colors text-slate-900  font-bold h-12 px-8 whitespace-nowrap"
             >
               Download Brochure
             </button>
@@ -43,14 +43,14 @@ export default function AboutCTA() {
           onClick={() => setIsModalOpen(false)}
         >
           <div
-            className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl max-w-md w-full overflow-hidden transform transition-all border border-slate-200 dark:border-slate-800"
+            className="bg-white  rounded-2xl shadow-2xl max-w-md w-full overflow-hidden transform transition-all border border-slate-200 "
             onClick={(e) => e.stopPropagation()}
           >
             <div className="p-6 sm:p-8 text-center">
               <div className="flex justify-end mb-2">
                 <button
                   onClick={() => setIsModalOpen(false)}
-                  className="p-1 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 transition-colors"
+                  className="p-1 rounded-lg hover:bg-slate-100  text-slate-500 transition-colors"
                 >
                   <X size={20} />
                 </button>
@@ -60,10 +60,10 @@ export default function AboutCTA() {
                 <Clock size={32} />
               </div>
 
-              <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">
+              <h3 className="text-2xl font-bold text-slate-900  mb-3">
                 Coming Soon
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+              <p className="text-slate-600  mb-8 leading-relaxed">
                 We&apos;re currently updating our brochure with the latest
                 engineering innovations and project case studies. Please check
                 back soon!

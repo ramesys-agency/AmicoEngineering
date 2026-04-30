@@ -6,7 +6,7 @@ export default function ClientsCTA() {
         <h2 className="text-primary text-3xl md:text-4xl font-bold tracking-tight">
           Ready to Optimize Your Operations?
         </h2>
-        <p className="text-slate-800 dark:text-slate-300 text-lg max-w-2xl">
+        <p className="text-slate-800  text-lg max-w-2xl">
           Our team of expert engineers is ready to tackle your most complex
           challenges. Let&apos;s discuss your next project.
         </p>

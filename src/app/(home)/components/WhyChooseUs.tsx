@@ -2,18 +2,18 @@ import Image from "next/image";
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-20 bg-white dark:bg-background-dark">
+    <section className="py-20 bg-white ">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-10">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           <div className="lg:w-1/2">
-            <div className="inline-block px-3 py-1 bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-bold uppercase tracking-wider mb-4 rounded">
+            <div className="inline-block px-3 py-1 bg-white  text-slate-600  text-xs font-bold uppercase tracking-wider mb-4 rounded">
               Our Advantage
             </div>
-            <h2 className="text-4xl font-black text-slate-900 dark:text-white mb-6 leading-tight">
+            <h2 className="text-4xl font-black text-slate-900  mb-6 leading-tight">
               Built on a Foundation of <br />
               Quality & Trust
             </h2>
-            <p className="text-slate-600 dark:text-slate-300 text-lg mb-8">
+            <p className="text-slate-600  text-lg mb-8">
               At Amico Engineering, we believe that quality is the ultimate
               expression of trust. We don&apos;t just supply parts; we provide
               precision-engineered solutions that you can rely on for years to come.
@@ -26,10 +26,10 @@ export default function WhyChooseUs() {
                   </span>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-slate-900 dark:text-white">
+                  <h4 className="text-lg font-bold text-slate-900 ">
                     ISO 9001 Certified Quality
                   </h4>
-                  <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">
+                  <p className="text-slate-500  text-sm mt-1">
                     Rigorous quality control processes ensure zero-defect
                     manufacturing.
                   </p>
@@ -42,10 +42,10 @@ export default function WhyChooseUs() {
                   </span>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-slate-900 dark:text-white">
+                  <h4 className="text-lg font-bold text-slate-900 ">
                     24/7 Technical Support
                   </h4>
-                  <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">
+                  <p className="text-slate-500  text-sm mt-1">
                     Our engineering team is always available to minimize your
                     downtime.
                   </p>
@@ -58,10 +58,10 @@ export default function WhyChooseUs() {
                   </span>
                 </div>
                 <div>
-                  <h4 className="text-lg font-bold text-slate-900 dark:text-white">
+                  <h4 className="text-lg font-bold text-slate-900 ">
                     Global Logistics Network
                   </h4>
-                  <p className="text-slate-500 dark:text-slate-400 text-sm mt-1">
+                  <p className="text-slate-500  text-sm mt-1">
                     Efficient shipping and installation services to over 50
                     countries.
                   </p>
@@ -70,7 +70,7 @@ export default function WhyChooseUs() {
             </ul>
           </div>
           <div className="lg:w-1/2 relative hidden sm:block">
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-white dark:bg-slate-800 -z-10 rounded"></div>
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-white  -z-10 rounded"></div>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-primary/10 -z-10 rounded"></div>
             <Image
               className="rounded shadow-xl w-full object-cover h-[500px]"

@@ -10,7 +10,7 @@ export const metadata = {
 export default function RequestQuotePage() {
   return (
     <>
-      <main className="flex-1 w-full flex flex-col overflow-x-hidden bg-slate-50 dark:bg-slate-900/20 pb-20">
+      <main className="flex-1 w-full flex flex-col overflow-x-hidden bg-slate-50  pb-20">
         <PageHero
           preTitle="Get Started"
           title="Custom Engineering Quote"
@@ -30,25 +30,25 @@ export default function RequestQuotePage() {
         <section className="w-full max-w-4xl px-4 sm:px-10 mt-20 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center group">
-              <div className="size-14 bg-white dark:bg-slate-800 rounded-2xl shadow-md flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform text-primary border border-slate-100 dark:border-slate-700">
+              <div className="size-14 bg-white  rounded-2xl shadow-md flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform text-primary border border-slate-100 ">
                 <span className="material-symbols-outlined text-3xl">description</span>
               </div>
-              <h3 className="font-bold text-slate-900 dark:text-white mb-2">1. Submit Specs</h3>
-              <p className="text-sm text-slate-500 dark:text-slate-400">Provide detailed requirements via the form above.</p>
+              <h3 className="font-bold text-slate-900  mb-2">1. Submit Specs</h3>
+              <p className="text-sm text-slate-500 ">Provide detailed requirements via the form above.</p>
             </div>
             <div className="text-center group">
-              <div className="size-14 bg-white dark:bg-slate-800 rounded-2xl shadow-md flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform text-primary border border-slate-100 dark:border-slate-700">
+              <div className="size-14 bg-white  rounded-2xl shadow-md flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform text-primary border border-slate-100 ">
                 <span className="material-symbols-outlined text-3xl">engineering</span>
               </div>
-              <h3 className="font-bold text-slate-900 dark:text-white mb-2">2. Review</h3>
-              <p className="text-sm text-slate-500 dark:text-slate-400">Our engineers review for technical feasibility and design.</p>
+              <h3 className="font-bold text-slate-900  mb-2">2. Review</h3>
+              <p className="text-sm text-slate-500 ">Our engineers review for technical feasibility and design.</p>
             </div>
             <div className="text-center group">
-              <div className="size-14 bg-white dark:bg-slate-800 rounded-2xl shadow-md flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform text-primary border border-slate-100 dark:border-slate-700">
+              <div className="size-14 bg-white  rounded-2xl shadow-md flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform text-primary border border-slate-100 ">
                 <span className="material-symbols-outlined text-3xl">task_alt</span>
               </div>
-              <h3 className="font-bold text-slate-900 dark:text-white mb-2">3. Proposal</h3>
-              <p className="text-sm text-slate-500 dark:text-slate-400">Receive a comprehensive commercial and technical quote.</p>
+              <h3 className="font-bold text-slate-900  mb-2">3. Proposal</h3>
+              <p className="text-sm text-slate-500 ">Receive a comprehensive commercial and technical quote.</p>
             </div>
           </div>
         </section>

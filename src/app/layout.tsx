@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
-import { ThemeProvider } from "@/components/providers/ThemeProvider";
 import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
@@ -30,24 +29,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
+    <html lang="en">
+      <body className={`${inter.variable} antialiased font-display min-h-screen flex flex-col`}>
         <link
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
           rel="stylesheet"
         />
-      </head>
-      <body className={`${inter.variable} antialiased`}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="light"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          <Navbar />
-          {children}
-          <Analytics />
-        </ThemeProvider>
+        <Navbar />
+        {children}
+        <Analytics />
       </body>
     </html>
   );

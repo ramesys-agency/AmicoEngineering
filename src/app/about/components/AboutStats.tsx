@@ -1,6 +1,6 @@
 export default function AboutStats() {
   return (
-    <section className="py-16 bg-primary dark:bg-primary-dark text-white">
+    <section className="py-16 bg-primary  text-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center divide-x divide-white/20">
           <div className="p-4">

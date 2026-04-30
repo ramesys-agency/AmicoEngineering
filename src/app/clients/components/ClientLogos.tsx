@@ -38,10 +38,10 @@ export default function ClientLogos() {
   return (
     <section className="w-full py-16">
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-slate-900 dark:text-white text-4xl font-extrabold leading-tight tracking-tight mb-4">
+        <h2 className="text-slate-900  text-4xl font-extrabold leading-tight tracking-tight mb-4">
           Trusted by Industry Leaders
         </h2>
-        <p className="text-slate-600 dark:text-slate-400 text-lg">
+        <p className="text-slate-600  text-lg">
           We are proud to partner with some of the world&apos;s most prestigious
           organizations, delivering engineering excellence across diverse
           industrial sectors.
@@ -54,8 +54,8 @@ export default function ClientLogos() {
             key={index}
             className={`group relative p-6 rounded-2xl border transition-all duration-500 overflow-hidden ${
               client.premium
-                ? "bg-linear-to-br from-white to-primary/5 dark:from-slate-800 dark:to-primary/10 border-primary/30 shadow-lg shadow-primary/5 scale-[1.02] z-10"
-                : "bg-white dark:bg-slate-800/50 border-slate-200 dark:border-slate-700 hover:border-primary/50"
+                ? "bg-linear-to-br from-white to-primary/5   border-primary/30 shadow-lg shadow-primary/5 scale-[1.02] z-10"
+                : "bg-white  border-slate-200  hover:border-primary/50"
             } hover:shadow-xl hover:shadow-primary/10 hover:scale-[1.05]`}
           >
             <div className="absolute top-0 right-0 p-2 opacity-10 group-hover:opacity-25 transition-opacity">
@@ -70,8 +70,8 @@ export default function ClientLogos() {
               <h3
                 className={`font-bold text-lg transition-colors duration-300 ${
                   client.premium
-                    ? "text-primary dark:text-primary-light"
-                    : "text-slate-900 dark:text-white group-hover:text-primary"
+                    ? "text-primary "
+                    : "text-slate-900  group-hover:text-primary"
                 }`}
               >
                 {client.name}
@@ -83,8 +83,8 @@ export default function ClientLogos() {
                 <span
                   className={`text-xs font-bold uppercase tracking-widest transition-colors ${
                     client.premium
-                      ? "text-slate-600 dark:text-slate-300"
-                      : "text-slate-400 group-hover:text-slate-500 dark:group-hover:text-slate-300"
+                      ? "text-slate-600 "
+                      : "text-slate-400 group-hover:text-slate-500 "
                   }`}
                 >
                   {client.sector}

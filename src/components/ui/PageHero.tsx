@@ -102,7 +102,7 @@ export default function PageHero({
                     {crumb.label}
                   </Link>
                 ) : (
-                  <span className="text-slate-900 dark:text-slate-200 font-medium">
+                  <span className="text-slate-900  font-medium">
                     {crumb.label}
                   </span>
                 )}

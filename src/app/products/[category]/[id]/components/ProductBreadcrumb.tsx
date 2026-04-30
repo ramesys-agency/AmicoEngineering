@@ -53,7 +53,7 @@ export default function ProductBreadcrumb({
         </li>
         <li
           aria-current="page"
-          className="font-medium text-slate-900 dark:text-white"
+          className="font-medium text-slate-900 "
         >
           {productName}
         </li>

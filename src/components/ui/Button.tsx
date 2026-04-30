@@ -26,7 +26,7 @@ export default function Button({
     primary: "bg-primary hover:bg-primary-dark text-white shadow-sm",
     secondary: "bg-slate-800 hover:bg-slate-900 text-white shadow-sm",
     outline:
-      "bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-600 text-slate-700 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-700",
+      "bg-white  border border-slate-300  text-slate-700  hover:bg-slate-50 ",
     ghost: "bg-transparent text-primary hover:bg-primary/10",
   };
 

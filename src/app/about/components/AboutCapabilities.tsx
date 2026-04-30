@@ -1,18 +1,18 @@
 export default function AboutCapabilities() {
   return (
-    <section className="py-20 bg-slate-50 dark:bg-[#151b2b]">
+    <section className="py-20 bg-slate-50 ">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900  mb-4">
             Core Capabilities
           </h2>
-          <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+          <p className="text-slate-600  max-w-2xl mx-auto">
             We combine state-of-the-art technology with seasoned expertise.
           </p>
         </div>
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Card 1: Manufacturing */}
-          <div className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow border border-slate-200 dark:border-slate-700">
+          <div className="bg-white  rounded-lg overflow-hidden shadow border border-slate-200 ">
             <div
               className="h-48 bg-cover bg-center"
               style={{
@@ -25,17 +25,17 @@ export default function AboutCapabilities() {
                 <span className="material-symbols-outlined text-primary text-2xl">
                   factory
                 </span>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                <h3 className="text-xl font-bold text-slate-900 ">
                   Manufacturing Overview
                 </h3>
               </div>
-              <p className="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+              <p className="text-slate-600  text-sm mb-4 leading-relaxed">
                 Our 50,000 sq. ft. facility is equipped with advanced CNC
                 machining centers, laser cutters, and heavy-duty robotic
                 welders. We handle everything from prototyping to mass
                 production runs with impeccable precision.
               </p>
-              <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+              <ul className="space-y-2 text-sm text-slate-600 ">
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                   5-Axis CNC Machining
@@ -52,7 +52,7 @@ export default function AboutCapabilities() {
             </div>
           </div>
           {/* Card 2: Design */}
-          <div className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow border border-slate-200 dark:border-slate-700">
+          <div className="bg-white  rounded-lg overflow-hidden shadow border border-slate-200 ">
             <div
               className="h-48 bg-cover bg-center"
               style={{
@@ -65,17 +65,17 @@ export default function AboutCapabilities() {
                 <span className="material-symbols-outlined text-primary text-2xl">
                   architecture
                 </span>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                <h3 className="text-xl font-bold text-slate-900 ">
                   Design &amp; Engineering
                 </h3>
               </div>
-              <p className="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+              <p className="text-slate-600  text-sm mb-4 leading-relaxed">
                 Our in-house design studio utilizes the latest CAD/CAM software
                 to simulate and optimize designs before production begins. This
                 reduces waste, accelerates timelines, and ensures structural
                 integrity.
               </p>
-              <ul className="space-y-2 text-sm text-slate-600 dark:text-slate-400">
+              <ul className="space-y-2 text-sm text-slate-600 ">
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary"></span>
                   3D Modeling &amp; Simulation
@@ -92,7 +92,7 @@ export default function AboutCapabilities() {
             </div>
           </div>
           {/* Card 3: Quality */}
-          <div className="bg-white dark:bg-slate-800 rounded-lg overflow-hidden shadow border border-slate-200 dark:border-slate-700">
+          <div className="bg-white  rounded-lg overflow-hidden shadow border border-slate-200 ">
             <div
               className="h-48 bg-cover bg-center"
               style={{
@@ -105,11 +105,11 @@ export default function AboutCapabilities() {
                 <span className="material-symbols-outlined text-primary text-2xl">
                   verified
                 </span>
-                <h3 className="text-xl font-bold text-slate-900 dark:text-white">
+                <h3 className="text-xl font-bold text-slate-900 ">
                   Quality Commitment
                 </h3>
               </div>
-              <p className="text-slate-600 dark:text-slate-400 text-sm mb-4 leading-relaxed">
+              <p className="text-slate-600  text-sm mb-4 leading-relaxed">
                 Quality is not just a department; it&apos;s our culture. We
                 adhere to strict quality control protocols at every stage. We
                 are proud holders of multiple international certifications

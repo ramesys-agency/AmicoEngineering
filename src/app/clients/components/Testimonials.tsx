@@ -3,18 +3,18 @@ import Image from "next/image";
 export default function Testimonials() {
   return (
     <section>
-      <h2 className="text-slate-900 dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em] mb-8 text-center md:text-left">
+      <h2 className="text-slate-900  text-3xl font-bold leading-tight tracking-[-0.015em] mb-8 text-center md:text-left">
         What Our Clients Say
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Testimonial 1 */}
-        <div className="bg-white dark:bg-slate-900 p-8 rounded-lg border-l-4 border-primary shadow-sm hover:shadow-md transition-shadow">
+        <div className="bg-white  p-8 rounded-lg border-l-4 border-primary shadow-sm hover:shadow-md transition-shadow">
           <div className="flex gap-2 mb-4 text-primary">
             <span className="material-symbols-outlined text-2xl">
               format_quote
             </span>
           </div>
-          <p className="text-slate-600 dark:text-slate-300 text-lg italic mb-6">
+          <p className="text-slate-600  text-lg italic mb-6">
             &quot;Their engineering precision saved us 20% in operational costs
             within the first year of implementation. A truly transformative
             partnership.&quot;
@@ -30,7 +30,7 @@ export default function Testimonials() {
               />
             </div>
             <div>
-              <h4 className="text-slate-900 dark:text-white font-bold">
+              <h4 className="text-slate-900  font-bold">
                 John Doe
               </h4>
               <p className="text-slate-500 text-sm">COO, Apex Mining</p>
@@ -38,13 +38,13 @@ export default function Testimonials() {
           </div>
         </div>
         {/* Testimonial 2 */}
-        <div className="bg-white dark:bg-slate-900 p-8 rounded-lg border-l-4 border-primary shadow-sm hover:shadow-md transition-shadow">
+        <div className="bg-white  p-8 rounded-lg border-l-4 border-primary shadow-sm hover:shadow-md transition-shadow">
           <div className="flex gap-2 mb-4 text-primary">
             <span className="material-symbols-outlined text-2xl">
               format_quote
             </span>
           </div>
-          <p className="text-slate-600 dark:text-slate-300 text-lg italic mb-6">
+          <p className="text-slate-600  text-lg italic mb-6">
             &quot;The team at Apex Engineering delivered our manufacturing plant
             upgrade ahead of schedule with zero safety incidents. Exceptional
             work.&quot;
@@ -60,7 +60,7 @@ export default function Testimonials() {
               />
             </div>
             <div>
-              <h4 className="text-slate-900 dark:text-white font-bold">
+              <h4 className="text-slate-900  font-bold">
                 Sarah Jenkins
               </h4>
               <p className="text-slate-500 text-sm">

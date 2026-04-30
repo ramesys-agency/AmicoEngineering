@@ -5,10 +5,10 @@ export default function IndustrySectors() {
     <section>
       <div className="flex flex-col md:flex-row justify-between items-end mb-8 gap-4">
         <div>
-          <h2 className="text-slate-900 dark:text-white text-3xl font-bold leading-tight tracking-[-0.015em]">
+          <h2 className="text-slate-900  text-3xl font-bold leading-tight tracking-[-0.015em]">
             Industry Sectors Served
           </h2>
-          <p className="text-slate-500 dark:text-slate-400 mt-2 text-lg">
+          <p className="text-slate-500  mt-2 text-lg">
             Specialized expertise tailored to your operational needs.
           </p>
         </div>
@@ -24,17 +24,17 @@ export default function IndustrySectors() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {/* Mining Card */}
-        <div className="group flex flex-col gap-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-none hover:-translate-y-1 transition-all duration-300">
+        <div className="group flex flex-col gap-4 rounded-lg border border-slate-200  bg-white  p-6 hover:shadow-xl hover:shadow-slate-200/50  hover:-translate-y-1 transition-all duration-300">
           <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
             <span className="material-symbols-outlined text-2xl">
               construction
             </span>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-slate-900 dark:text-white text-xl font-bold">
+            <h3 className="text-slate-900  text-xl font-bold">
               Mining &amp; Resources
             </h3>
-            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+            <p className="text-slate-500  text-sm leading-relaxed">
               Optimizing extraction processes and enhancing site safety
               protocols through advanced structural engineering.
             </p>
@@ -49,15 +49,15 @@ export default function IndustrySectors() {
           </div>
         </div>
         {/* Manufacturing Card */}
-        <div className="group flex flex-col gap-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-none hover:-translate-y-1 transition-all duration-300">
+        <div className="group flex flex-col gap-4 rounded-lg border border-slate-200  bg-white  p-6 hover:shadow-xl hover:shadow-slate-200/50  hover:-translate-y-1 transition-all duration-300">
           <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
             <span className="material-symbols-outlined text-2xl">factory</span>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-slate-900 dark:text-white text-xl font-bold">
+            <h3 className="text-slate-900  text-xl font-bold">
               Manufacturing
             </h3>
-            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+            <p className="text-slate-500  text-sm leading-relaxed">
               Streamlining production lines for maximum efficiency and output
               with custom automation solutions.
             </p>
@@ -72,17 +72,17 @@ export default function IndustrySectors() {
           </div>
         </div>
         {/* Logistics Card */}
-        <div className="group flex flex-col gap-4 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 hover:shadow-xl hover:shadow-slate-200/50 dark:hover:shadow-none hover:-translate-y-1 transition-all duration-300">
+        <div className="group flex flex-col gap-4 rounded-lg border border-slate-200  bg-white  p-6 hover:shadow-xl hover:shadow-slate-200/50  hover:-translate-y-1 transition-all duration-300">
           <div className="size-12 rounded-full bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
             <span className="material-symbols-outlined text-2xl">
               local_shipping
             </span>
           </div>
           <div className="flex flex-col gap-2">
-            <h3 className="text-slate-900 dark:text-white text-xl font-bold">
+            <h3 className="text-slate-900  text-xl font-bold">
               Logistics &amp; Warehousing
             </h3>
-            <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+            <p className="text-slate-500  text-sm leading-relaxed">
               Automated warehousing systems and supply chain optimization for
               global distribution networks.
             </p>

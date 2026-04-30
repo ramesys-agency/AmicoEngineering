@@ -2,24 +2,25 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 
-interface PrimaryButtonProps {
-  href?: string;
-  onClick?: () => void;
+type BaseProps = {
   children: ReactNode;
   icon?: string;
   className?: string;
-  type?: "button" | "submit" | "reset";
   size?: "sm" | "md" | "lg";
-}
+};
+
+type AnchorProps = BaseProps & React.AnchorHTMLAttributes<HTMLAnchorElement> & { href: string };
+type ButtonProps = BaseProps & React.ButtonHTMLAttributes<HTMLButtonElement> & { href?: never; type?: "button" | "submit" | "reset" };
+
+type PrimaryButtonProps = AnchorProps | ButtonProps;
 
 export default function PrimaryButton({
   href,
-  onClick,
   children,
   icon = "arrow_forward",
   className = "",
-  type = "button",
   size = "md",
+  ...props
 }: PrimaryButtonProps) {
   const sizeStyles = {
     sm: "h-9 px-4 text-xs",
@@ -27,13 +28,15 @@ export default function PrimaryButton({
     lg: "h-14 px-8 text-base",
   };
 
-  const styles = `inline-flex items-center justify-center rounded-lg ${sizeStyles[size]} bg-primary text-white hover:bg-primary-dark font-bold transition-all shadow-md group/btn ${className}`;
+  const styles = `inline-flex items-center justify-center rounded-lg cursor-pointer ${sizeStyles[size]} bg-primary text-white hover:bg-primary-dark font-bold transition-all shadow-md group/btn ${className}`;
 
   const content = (
     <>
       {children}
       {icon && (
-        <span className={`${size === "lg" ? "text-xl" : "text-lg"} ml-2 group-hover/btn:translate-x-1 transition-transform material-symbols-outlined`}>
+        <span
+          className={`${size === "lg" ? "text-xl" : "text-lg"} ml-2 group-hover/btn:translate-x-1 transition-transform material-symbols-outlined`}
+        >
           {icon}
         </span>
       )}
@@ -42,14 +45,16 @@ export default function PrimaryButton({
 
   if (href) {
     return (
-      <Link href={href} className={styles}>
+      <Link href={href} className={styles} {...(props as any)}>
         {content}
       </Link>
     );
   }
 
+  const { type = "button", ...buttonProps } = props as any;
+
   return (
-    <button type={type} onClick={onClick} className={styles}>
+    <button type={type} className={styles} {...buttonProps}>
       {content}
     </button>
   );
